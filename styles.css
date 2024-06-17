@@ -41,6 +41,10 @@ header .head {
   align-items: center;
 }
 
+header .logo {
+  margin-left: 20px;
+}
+
 header .logo img {
   height: 50px;
 }
@@ -51,54 +55,9 @@ header h1 a {
   text-transform: uppercase;
 }
 
-.util {
-  display: flex;
-  align-items: center;
-}
-
-.util > div {
-  margin-left: 20px;
-}
-
-button {
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.language ul,
-.tsns ul,
-.search .schbox {
-  display: none;
-}
-
-.language.on ul,
-.tsns.on ul,
-.search.on .schbox {
-  display: block;
-  position: absolute;
-  background: white;
-  color: #333;
-  padding: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.language ul li,
-.tsns ul li,
-.search .schbox button {
-  margin-bottom: 10px;
-}
-
-#menuOpen,
-#menuClose {
-  display: none;
-}
-
 nav.menu {
   display: flex;
+  align-items: center;
 }
 
 nav.menu ul {
@@ -112,6 +71,11 @@ nav.menu ul li {
 nav.menu ul li a {
   color: white;
   font-size: 18px;
+}
+
+#menuOpen,
+#menuClose {
+  display: none;
 }
 
 nav.menu.on {

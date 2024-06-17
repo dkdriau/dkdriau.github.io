@@ -54,16 +54,4 @@ $(document).ready(function () {
   $("#menuClose").click(function () {
     $(".menu").toggleClass("on");
   });
-
-  $(".language button").click(function () {
-    $(".language").toggleClass("on");
-  });
-
-  $(".tsns button").click(function () {
-    $(".tsns").toggleClass("on");
-  });
-
-  $(".search button").click(function () {
-    $(".search").toggleClass("on");
-  });
 });
