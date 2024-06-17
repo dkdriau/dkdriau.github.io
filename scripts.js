@@ -47,6 +47,14 @@ $(document).ready(function () {
       });
   }
 
+  $("#menuOpen").click(function () {
+    $(".menu").toggleClass("on");
+  });
+
+  $("#menuClose").click(function () {
+    $(".menu").toggleClass("on");
+  });
+
   $(".language button").click(function () {
     $(".language").toggleClass("on");
   });

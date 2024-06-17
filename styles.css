@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
@@ -28,12 +28,21 @@ header {
   background: #004d40;
   color: white;
   padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 header .head {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+header .logo img {
+  height: 50px;
 }
 
 header h1 a {
@@ -111,22 +120,40 @@ nav.menu.on {
 
 .main_visual {
   text-align: center;
-  background: url("images/banner.png") no-repeat center center/cover;
+  background: url("images/banner.jpg") no-repeat center center/cover;
   color: white;
   padding: 100px 0;
+  position: relative;
+  margin-top: 80px; /* Adjust to header height */
+}
+
+.main_visual::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .main_visual .title {
   font-size: 48px;
   margin-bottom: 20px;
+  z-index: 1;
+  position: relative;
 }
 
 .main_visual .txt {
   font-size: 24px;
+  z-index: 1;
+  position: relative;
 }
 
 .music {
   margin-top: 20px;
+  z-index: 1;
+  position: relative;
 }
 
 #content {
@@ -140,6 +167,7 @@ footer {
   color: white;
   padding: 20px 0;
   text-align: center;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 footer .fban ul {
@@ -207,4 +235,68 @@ footer .top a {
     padding: 15px;
     min-height: 300px;
   }
+}
+
+/* Additional Styles */
+section {
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+section h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+section p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+address {
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.main_visual p.title {
+  font-family: "Pacifico", cursive;
+  font-weight: bold;
+}
+
+button {
+  background-color: #008cba;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #005f6b;
+}
+
+nav.menu ul li a:hover {
+  text-decoration: underline;
+}
+
+footer .fban ul li a img {
+  width: 50px;
+  height: auto;
+}
+
+.main_visual .music audio {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 8px;
 }
