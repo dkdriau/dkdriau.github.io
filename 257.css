@@ -382,12 +382,12 @@ header {
 .main_visual a:focus {
   background: #333;
 }
-.main_visual .music {
+/* .main_visual .music {
   position: absolute;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-}
+} */
 
 footer {
   position: relative;
@@ -601,12 +601,12 @@ footer .top a {
   .main_visual .title strong {
     font-size: 140px;
   }
-  .main_visual .drow {
+  .main_visual .smgt {
     position: absolute;
     top: 200px;
     left: 12%;
   }
-  .main_visual .your {
+  .main_visual .unggl {
     font-size: 110px;
     position: absolute;
     top: 270px;
@@ -614,10 +614,18 @@ footer .top a {
     -webkit-text-stroke-width: 3px;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   }
-  .main_visual .dream {
+  .main_visual .aktf {
     position: absolute;
     top: 370px;
     left: 33%;
+  }
+  .main_visual .invtf {
+    font-size: 110px;
+    position: absolute;
+    top: 270px;
+    left: 42%;
+    -webkit-text-stroke-width: 3px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   }
   .main_visual .txt {
     font-size: 36px;
@@ -627,11 +635,11 @@ footer .top a {
     width: 450px;
     text-align: center;
   }
-  .main_visual .music {
+  /* .main_visual .music {
     transform: none;
     left: auto;
     right: 20px;
-  }
+  } */
 
   footer {
     padding: 0 20px;
@@ -905,10 +913,10 @@ footer .top a {
     top: 660px;
     left: 41%;
   }
-  .main_visual .music {
+  /* .main_visual .music {
     right: 80px;
     bottom: 40px;
-  }
+  } */
   /* visual icons */
   .main_visual .title:after {
     display: block;
