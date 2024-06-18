@@ -619,14 +619,6 @@ footer .top a {
     top: 370px;
     left: 33%;
   }
-  .main_visual .invtf {
-    font-size: 110px;
-    position: absolute;
-    top: 270px;
-    left: 42%;
-    -webkit-text-stroke-width: 3px;
-    text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  }
   .main_visual .txt {
     font-size: 36px;
     position: absolute;
