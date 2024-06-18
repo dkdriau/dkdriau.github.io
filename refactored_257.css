@@ -23,26 +23,18 @@
 #skip li a:active {
   background: #363636;
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
   z-index: 100;
   color: #fff;
   width: 100%;
   height: 25px;
-  padding: 5px 0 0 0;
+  padding: 5px 0;
 }
-.blind {
-  display: block;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: -5000px;
-  font-size: 1.8em;
-}
+
+.blind,
 .hide {
   display: none !important;
-  margin: 0;
-  padding: 0;
 }
 
 .m_container {
@@ -54,6 +46,7 @@ header {
   width: 100%;
   z-index: 10;
 }
+
 .head {
   position: relative;
   width: 100%;
@@ -75,7 +68,7 @@ header {
   height: 35px;
   font-size: 0;
   overflow: hidden;
-  background: url("/images/newmain/logo.png") no-repeat 0 0 /100%;
+  background: url("/images/newmain/logo.png") no-repeat 0 0 / 100%;
 }
 .head .util {
   float: right;
@@ -98,10 +91,12 @@ header {
   border-radius: 10px;
   overflow: hidden;
 }
-.head .util div ul {
+.head .util div ul,
+.head .search div {
   display: none;
 }
-.head .util div.on ul {
+.head .util div.on ul,
+.head .search.on div {
   display: block;
 }
 .head .language button,
@@ -177,23 +172,7 @@ header {
   padding: 0;
   font-size: 0;
   overflow: hidden;
-  background: url("/images/newmain/cm_ico.png") no-repeat;
-}
-.head .search > button {
-  background-position: center -60px;
-}
-.head .search > div {
-  display: none;
-  position: absolute;
-  top: 50px;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  background: #e6f6ff;
-  box-sizing: border-box;
-}
-.head .search.on > div {
-  display: block;
+  background: url("/images/newmain/cm_ico.png") no-repeat center -60px;
 }
 .head .search form {
   background: #fff;
@@ -204,7 +183,7 @@ header {
   padding: 8px;
   font-size: 16px;
 }
-.head .search input[type="text"]:placeholder {
+.head .search input[type="text"]::placeholder {
   color: #666;
 }
 .head .search input[type="submit"] {
@@ -225,7 +204,6 @@ header {
   background-position: center 8px;
   background-color: #0072ce;
 }
-
 .head > button {
   position: absolute;
   right: 12px;
@@ -236,6 +214,7 @@ header {
   overflow: hidden;
   background: url("/images/newmain/cm_ico.png") no-repeat center -30px;
 }
+
 .menu {
   display: none;
   position: fixed;
@@ -306,6 +285,7 @@ header {
   overflow: hidden;
   background: url("/images/newmain/cm_ico.png") no-repeat center 0;
 }
+
 .new_win {
   display: inline-block;
   width: 10px;
@@ -335,9 +315,16 @@ header {
 }
 .main_visual .title strong {
   display: block;
-  font-size: 80px;
+  font-size: 60px;
 }
-.main_visual .your {
+.main_visual .unggl {
+  display: block;
+  font-style: normal;
+  font-size: 60px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+.main_visual .invtf {
   display: block;
   font-style: normal;
   font-size: 60px;
@@ -363,7 +350,7 @@ header {
   background: #582884;
   border-radius: 50px;
   padding: 15px 0;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 10px;
   color: #fff;
 }
 .main_visual a:before {
@@ -382,12 +369,6 @@ header {
 .main_visual a:focus {
   background: #333;
 }
-/* .main_visual .music {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-} */
 
 footer {
   position: relative;
@@ -459,7 +440,7 @@ footer .top a {
   text-align: center;
   padding: 30px 0;
   background-size: cover;
-  background-position: center center; /* background-attachment:fixed; */
+  background-position: center center;
 }
 .sub_visual h2 {
   display: inline-block;
@@ -508,16 +489,13 @@ footer .top a {
     margin-top: 10px;
     padding-right: 50px;
   }
-  .head .util > div {
-    margin: 0;
-  }
   .head .language {
     right: 260px;
     top: 25px;
   }
   .head .language button {
     padding-bottom: 5px;
-    margin-top: 0px;
+    margin-top: 0;
     color: #0072ce;
   }
   .head .language button:before {
@@ -570,7 +548,7 @@ footer .top a {
   .head .tsns li.face a {
     background-position: center -150px;
   }
-  .head .search > div {
+  .head .search div {
     top: 68px;
     left: auto;
     right: 65px;
@@ -599,12 +577,13 @@ footer .top a {
     line-height: 1em;
   }
   .main_visual .title strong {
-    font-size: 140px;
+    font-size: 120px;
   }
   .main_visual .smgt {
+    font-size: 110px;
     position: absolute;
-    top: 200px;
-    left: 12%;
+    top: 350px;
+    left: 0%;
   }
   .main_visual .unggl {
     font-size: 110px;
@@ -614,7 +593,16 @@ footer .top a {
     -webkit-text-stroke-width: 3px;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   }
+  .main_visual .invtf {
+    font-size: 110px;
+    position: absolute;
+    top: 270px;
+    left: 42%;
+    -webkit-text-stroke-width: 3px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
   .main_visual .aktf {
+    font-size: 110px;
     position: absolute;
     top: 370px;
     left: 33%;
@@ -627,11 +615,6 @@ footer .top a {
     width: 450px;
     text-align: center;
   }
-  /* .main_visual .music {
-    transform: none;
-    left: auto;
-    right: 20px;
-  } */
 
   footer {
     padding: 0 20px;
@@ -680,16 +663,12 @@ footer .top a {
     position: relative;
     float: left;
   }
-  .head .language,
-  .head .util .tsns {
-    right: auto;
-    top: auto;
-  }
-  .head .search > div {
+  .head .search div {
     top: 36px;
     right: 0;
   }
-  .head > button {
+  .head > button,
+  .menu button {
     display: none;
   }
   .menu {
@@ -711,14 +690,14 @@ footer .top a {
     height: 320px;
     border-top: 1px solid #eee;
   }
-  /*.menu.on:before{display: block;}*/
+  .menu:after,
   .menu > ul:after {
     display: block;
     clear: both;
     content: "";
   }
   .menu > ul > li {
-    float: left; /*position: relative;*/
+    float: left;
     width: 25%;
     margin: 0;
   }
@@ -766,17 +745,12 @@ footer .top a {
   .menu li li a:focus {
     color: #0072ce;
   }
-  .menu button {
-    display: none;
-  }
+
   .new_win {
     background: url("/images/common/new_win.png") no-repeat;
   }
 
-  .fr_main .menu li li {
-    width: 25%;
-    margin: 20px 0;
-  }
+  .fr_main .menu li li,
   .eng_main .menu li li {
     width: 25%;
     margin: 20px 0;
@@ -789,27 +763,35 @@ footer .top a {
   .main_visual .title {
     position: absolute;
     top: 280px;
-    left: 50%;
+    left: 40%;
     transform: translateX(-50%);
     width: 850px;
   }
   .main_visual .title strong {
-    font-size: 200px;
+    font-size: 120px;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   }
-  .main_visual .drow {
+  .main_visual .smgt {
+    font-size: 120px;
     top: 0;
-    left: 0;
+    left: 5%;
   }
-  .main_visual .your {
-    font-size: 160px;
+  .main_visual .unggl {
+    font-size: 120px;
     top: 100px;
-    left: 40%;
+    left: 20%;
     z-index: 1;
   }
-  .main_visual .dream {
+  .main_visual .invtf {
+    font-size: 120px;
+    top: 350px;
+    left: 45%;
+    z-index: 1;
+  }
+  .main_visual .aktf {
+    font-size: 120px;
     top: 240px;
-    left: auto;
+    left: 30%;
     right: 0;
   }
   .main_visual .txt {
@@ -852,6 +834,7 @@ footer .top a {
     max-width: 1200px;
   }
 }
+
 @media all and (min-width: 1400px) {
   .head {
     padding: 17px 80px 0;
@@ -871,7 +854,6 @@ footer .top a {
   .menu > ul > li > a {
     height: 90px;
   }
-  /*.menu li div{max-width: 225px;left: 50%;transform: translateX(-50%);}*/
   .menu li div > ul {
     width: 1400px;
     margin: 0 auto;
@@ -880,17 +862,12 @@ footer .top a {
     margin: 40px;
   }
 
-  .fr_main .menu .on ul {
-    justify-content: flex-start;
-    padding: 25px 0;
-  }
-  .fr_main .menu li li {
-    margin: 15px 0;
-  }
+  .fr_main .menu .on ul,
   .eng_main .menu .on ul {
     justify-content: flex-start;
     padding: 25px 0;
   }
+  .fr_main .menu li li,
   .eng_main .menu li li {
     margin: 15px 0;
   }
@@ -898,49 +875,13 @@ footer .top a {
   .main_visual .title {
     top: 330px;
   }
-  .main_visual .dream {
+  .main_visual .aktf {
     right: -40px;
   }
   .main_visual .txt {
     top: 660px;
     left: 41%;
   }
-  /* .main_visual .music {
-    right: 80px;
-    bottom: 40px;
-  } */
-  /* visual icons */
-  .main_visual .title:after {
-    display: block;
-    position: absolute;
-    content: "";
-    background: url("/images/newmain/vis_ico.png") no-repeat center top;
-    width: 226px;
-    height: 128px;
-    top: 100px;
-    left: 20px;
-  }
-  .main_visual .title:before {
-    display: block;
-    position: absolute;
-    content: "";
-    background: url("/images/newmain/vis_ico.png") no-repeat center -138px;
-    width: 150px;
-    height: 118px;
-    top: -70px;
-    right: 160px;
-  }
-  .main_visual .your:after {
-    display: block;
-    position: absolute;
-    content: "";
-    background: url("/images/newmain/vis_ico.png") no-repeat center -266px;
-    width: 81px;
-    height: 95px;
-    top: -70px;
-    right: -85px;
-  }
-  /* visual icons */
 
   footer {
     padding: 0 80px;
@@ -972,7 +913,49 @@ footer .top a {
   .sub_visual {
     padding-top: 180px;
   }
+
+  .main_visual .title:after {
+    display: block;
+    position: absolute;
+    content: "";
+    background: url("/images/newmain/vis_ico.png") no-repeat center top;
+    width: 226px;
+    height: 128px;
+    top: 100px;
+    left: 20px;
+  }
+  .main_visual .title:before {
+    display: block;
+    position: absolute;
+    content: "";
+    background: url("/images/newmain/vis_ico.png") no-repeat center -138px;
+    width: 150px;
+    height: 118px;
+    top: -70px;
+    right: 160px;
+  }
+  .main_visual .unggl:after {
+    display: block;
+    position: absolute;
+    content: "";
+    background: url("/images/newmain/vis_ico.png") no-repeat center -266px;
+    width: 81px;
+    height: 95px;
+    top: -70px;
+    right: -85px;
+  }
+  .main_visual .invtf:after {
+    display: block;
+    position: absolute;
+    content: "";
+    background: url("/images/newmain/vis_ico.png") no-repeat center -266px;
+    width: 81px;
+    height: 95px;
+    top: -70px;
+    right: -85px;
+  }
 }
+
 @media all and (min-width: 1600px) {
   .menu {
     width: calc(100% - 600px);
@@ -1190,6 +1173,7 @@ footer .top a {
   left: auto;
   right: 10px;
 }
+
 @media all and (min-width: 768px) {
   .layer_inner {
     width: 600px;
@@ -1278,7 +1262,7 @@ footer .top a {
   font-size: 16px;
   background: #0072ce;
   color: #fff;
-  border-radius: 30px; /*background: #582784;*/
+  border-radius: 30px;
 }
 .q_banner a:hover .btn,
 .q_banner a:focus .btn {
@@ -1293,7 +1277,7 @@ footer .top a {
   background-image: url("/images/newmain/qbn_img2.png");
 }
 @media (min-width: 450px) and (max-width: 767px) {
-  .q_banner a strong > br {
+  .q_banner a strong br {
     display: none;
   }
 }
