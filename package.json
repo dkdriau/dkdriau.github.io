@@ -5,12 +5,10 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "deploy": "vue-cli-service build && gh-pages -d dist"
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "travis": "^0.1.1",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
   },
@@ -27,7 +25,6 @@
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-vue": "^8.0.3",
     "eslint-plugin-vuejs-accessibility": "^1.1.0",
-    "gh-pages": "^6.1.1",
     "postcss": "^8.4.38",
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0",
