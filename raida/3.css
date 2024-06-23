@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "Noto Sans CJK kr";
+  src: url("/font/notokr-demilight.eot");
+  src: url("/font/notokr-demilight.eot?#iefix") format("embedded-opentype"), url("/font/notokr-demilight.woff2") format("woff2"), url("/font/notokr-demilight.woff") format("woff"), url("/font/notokr-demilight.ttf") format("truetype"),
+    url("/font/notokr-demilight.svg#notokr-demilight") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans CJK kr";
+  src: url("/font/notokr-medium.eot");
+  src: url("/font/notokr-medium.eot?#iefix") format("embedded-opentype"), url("/font/notokr-medium.woff2") format("woff2"), url("/font/notokr-medium.woff") format("woff"), url("/font/notokr-medium.ttf") format("truetype"),
+    url("/font/notokr-medium.svg#notokr-medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans CJK kr";
+  src: url("/font/notokr-bold.eot");
+  src: url("/font/notokr-bold.eot?#iefix") format("embedded-opentype"), url("/font/notokr-bold.woff2") format("woff2"), url("/font/notokr-bold.woff") format("woff"), url("/font/notokr-bold.ttf") format("truetype"),
+    url("/font/notokr-bold.svg#notokr-bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans CJK kr", sans-serif;
+  color: #333;
+  font-weight: 500;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+div,
+p,
+ul,
+ol,
+li,
+img,
+a,
+table,
+td,
+th,
+tr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+span,
+iframe,
+dl,
+dt,
+dd,
+caption {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+table {
+  border-collapse: collapse;
+  vertical-align: middle;
+}
+img {
+  border: 0 none;
+}
+input,
+select,
+textarea,
+button {
+  font-family: "Noto Sans CJK kr", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+a,
+button,
+submit,
+input[type="submit"] {
+  transition: 0.2s ease-out;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+a:visited {
+  text-decoration: none;
+  border: none;
+}
+a:active {
+  text-decoration: none;
+  border: none;
+}
+a:hover {
+  text-decoration: none;
+  border: none;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+img,
+input.image {
+  border: 0 none;
+}
+form,
+input {
+  margin: 0;
+  padding: 0;
+}
+legend {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+caption {
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+textarea {
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+hr {
+  visibility: hidden;
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+}
+td *,
+div *,
+span *,
+p * {
+  vertical-align: top;
+}
+h1 {
+  font-size: 200%;
+}
+h2 {
+  font-size: 180%;
+}
+h3 {
+  font-size: 160%;
+}
+h4 {
+  font-size: 140%;
+}
+h5 {
+  font-size: 120%;
+}
+h6 {
+  font-size: 100%;
+}
