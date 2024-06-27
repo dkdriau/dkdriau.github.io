@@ -300,7 +300,7 @@ header {
 .main_con {
   position: relative;
   height: 100%;
-  min-height: 560px;
+  min-height: 800px;
   background: url("/images/newmain/banner.jpg") no-repeat left 47% top / cover;
 }
 .main_visual {
@@ -312,6 +312,7 @@ header {
 .main_visual .title {
   letter-spacing: -0.2em;
   line-height: 3em;
+  margin-bottom: 20px;
 }
 .main_visual .title strong {
   display: block;
@@ -795,8 +796,8 @@ footer .top a {
     right: 0;
   }
   .main_visual .txt {
-    top: 600px;
-    left: 30%;
+    top: 670px;
+    text-align: center;
     width: auto;
     padding: 10px 30px 15px;
     font-size: 32px;
